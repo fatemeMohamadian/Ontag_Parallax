@@ -1,0 +1,1136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("../font/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: "title1";
+  src: url("../font/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: "text";
+  src: url("../font/JosefinSlab-Bold.ttf");
+}
+@font-face {
+  font-family: "text1";
+  src: url("../font/Lato-BolIta.ttf");
+}
+body {
+  overflow-x: hidden;
+  background-color: rgb(15, 5, 0);
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+main > .c {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  z-index: 10;
+}
+main > .c1 {
+  width: 40px;
+  height: 40px;
+}
+main > .c2 {
+  width: 10px;
+  height: 10px;
+}
+main > .row {
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+main > .row > .slide1 > video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .row > .slide1 > header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 20;
+  margin-top: 100px;
+}
+main > .row > .slide1 > header > .box1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main > .row > .slide1 > header > .box1 > div {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide1 > header > .box1 > div:nth-of-type(1) > img {
+  width: 100px;
+  height: 120px;
+}
+main > .row > .slide1 > header > .box1 > nav {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide1 > header > .box1 > nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  font-family: "title1";
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: 3px solid rgba(6, 6, 6, 0.343);
+  background-color: rgba(38, 38, 38, 0.553);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+main > .row > .slide1 > header > .box1 > nav > ul > * {
+  margin: 35px 0;
+}
+main > .row > .slide1 > header > .box1 > nav > ul > li {
+  transition: 0.4s;
+}
+main > .row > .slide1 > header > .box1 > nav > ul > li:hover {
+  box-shadow: 0 0 100px 60px rgb(255, 106, 52);
+  background-color: rgba(243, 110, 57, 0.146);
+}
+main > .row > .slide1 > header > .box1 .exe {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide1 > header > .box1 .exe > span {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-family: "title";
+  cursor: pointer;
+}
+main > .row > .slide1 > header > .box1 .exe > span > * {
+  margin: 20px 0;
+}
+main > .row > .slide1 > header > .box1 .exe > span > i {
+  transition: 1s;
+}
+main > .row > .slide1 > header > .box1 .exe > span:hover > i {
+  transform: translateY(12px);
+}
+main > .row > .slide1 > .row {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  margin-top: 150px;
+}
+main > .row > .slide1 > .row > .box2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide1 > .row > .box2 > h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  margin-top: 10px;
+}
+main > .row > .slide1 > .row > .box2 > h2 > span {
+  font-family: "text2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 5px;
+  color: white;
+  transition: 1s;
+}
+main > .row > .slide1 > .row > .box2 > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+  font-size: 68px;
+  margin: 70px 0;
+  padding: 15px 0;
+  transition: 1s;
+  text-shadow: 2px 2px 2px orangered;
+}
+main > .row > .slide1 > .row > .box2 > h1 > span {
+  color: white;
+  font-family: "title";
+  transition: 1s;
+}
+main > .row > .slide1 > .row > .box2 > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+main > .row > .slide1 > .row > .box2 > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  border: 1px solid white solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+main > .row > .slide1 > .row > .box2 > div > span > p {
+  font-family: "text2";
+  color: white;
+  font-size: 40px;
+}
+main > .row > .slide2 {
+  width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide2 > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 3s;
+}
+main > .row > .slide2 > div > * {
+  margin: 15px 5px;
+}
+main > .row > .slide2 > div > span {
+  color: white;
+  font-family: "text";
+  animation: anime1 3s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+main > .row > .slide3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+main > .row > .slide3 > .txt {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main > .row > .slide3 > .txt > h2 {
+  font-family: "title1";
+  color: transparent;
+  font-size: 70px;
+  background: linear-gradient(#302a27, #965f39, #e1a57d, #afd3ec, #445f88);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+main > .row > .slide3 > .txt > h3 {
+  color: rgb(226, 226, 226);
+  font-family: "text2";
+  margin-top: 40px;
+  line-height: 35px;
+}
+main > .row > .slide3 > .txt > h4 {
+  color: white;
+  font-family: "text";
+  margin-top: 30px;
+}
+main > .row > .slide4,
+main > .row .slide5,
+main > .row .slide6,
+main > .row .slide7 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+main > .row > .slide4 > .sp,
+main > .row .slide5 > .sp,
+main > .row .slide6 > .sp,
+main > .row .slide7 > .sp {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide4 > .sp > .sp1,
+main > .row .slide5 > .sp > .sp1,
+main > .row .slide6 > .sp > .sp1,
+main > .row .slide7 > .sp > .sp1 {
+  width: 18%;
+  height: 25px;
+  box-shadow: 0 0 100px 20px rgb(29, 29, 29);
+  border-radius: 30px;
+  background: linear-gradient(#302a27, #965f39, #e1a57d, #afd3ec, #445f88);
+}
+main > .row > .slide4 > .text1,
+main > .row > .slide4 .text2,
+main > .row > .slide4 .text3,
+main > .row > .slide4 .text4,
+main > .row .slide5 > .text1,
+main > .row .slide5 .text2,
+main > .row .slide5 .text3,
+main > .row .slide5 .text4,
+main > .row .slide6 > .text1,
+main > .row .slide6 .text2,
+main > .row .slide6 .text3,
+main > .row .slide6 .text4,
+main > .row .slide7 > .text1,
+main > .row .slide7 .text2,
+main > .row .slide7 .text3,
+main > .row .slide7 .text4 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide4 > .text1 > h3,
+main > .row > .slide4 .text2 > h3,
+main > .row > .slide4 .text3 > h3,
+main > .row > .slide4 .text4 > h3,
+main > .row .slide5 > .text1 > h3,
+main > .row .slide5 .text2 > h3,
+main > .row .slide5 .text3 > h3,
+main > .row .slide5 .text4 > h3,
+main > .row .slide6 > .text1 > h3,
+main > .row .slide6 .text2 > h3,
+main > .row .slide6 .text3 > h3,
+main > .row .slide6 .text4 > h3,
+main > .row .slide7 > .text1 > h3,
+main > .row .slide7 .text2 > h3,
+main > .row .slide7 .text3 > h3,
+main > .row .slide7 .text4 > h3 {
+  color: white;
+  font-family: "text";
+}
+main > .row > .slide4 > .sc1,
+main > .row > .slide4 .sc2,
+main > .row > .slide4 .sc3,
+main > .row > .slide4 .sc4,
+main > .row .slide5 > .sc1,
+main > .row .slide5 .sc2,
+main > .row .slide5 .sc3,
+main > .row .slide5 .sc4,
+main > .row .slide6 > .sc1,
+main > .row .slide6 .sc2,
+main > .row .slide6 .sc3,
+main > .row .slide6 .sc4,
+main > .row .slide7 > .sc1,
+main > .row .slide7 .sc2,
+main > .row .slide7 .sc3,
+main > .row .slide7 .sc4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+main > .row > .slide4 > .sc1 > .picbox,
+main > .row > .slide4 .sc2 > .picbox,
+main > .row > .slide4 .sc3 > .picbox,
+main > .row > .slide4 .sc4 > .picbox,
+main > .row .slide5 > .sc1 > .picbox,
+main > .row .slide5 .sc2 > .picbox,
+main > .row .slide5 .sc3 > .picbox,
+main > .row .slide5 .sc4 > .picbox,
+main > .row .slide6 > .sc1 > .picbox,
+main > .row .slide6 .sc2 > .picbox,
+main > .row .slide6 .sc3 > .picbox,
+main > .row .slide6 .sc4 > .picbox,
+main > .row .slide7 > .sc1 > .picbox,
+main > .row .slide7 .sc2 > .picbox,
+main > .row .slide7 .sc3 > .picbox,
+main > .row .slide7 .sc4 > .picbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main > .row > .slide4 > .sc1 > .picbox:nth-of-type(1),
+main > .row > .slide4 .sc2 > .picbox:nth-of-type(1),
+main > .row > .slide4 .sc3 > .picbox:nth-of-type(1),
+main > .row > .slide4 .sc4 > .picbox:nth-of-type(1),
+main > .row .slide5 > .sc1 > .picbox:nth-of-type(1),
+main > .row .slide5 .sc2 > .picbox:nth-of-type(1),
+main > .row .slide5 .sc3 > .picbox:nth-of-type(1),
+main > .row .slide5 .sc4 > .picbox:nth-of-type(1),
+main > .row .slide6 > .sc1 > .picbox:nth-of-type(1),
+main > .row .slide6 .sc2 > .picbox:nth-of-type(1),
+main > .row .slide6 .sc3 > .picbox:nth-of-type(1),
+main > .row .slide6 .sc4 > .picbox:nth-of-type(1),
+main > .row .slide7 > .sc1 > .picbox:nth-of-type(1),
+main > .row .slide7 .sc2 > .picbox:nth-of-type(1),
+main > .row .slide7 .sc3 > .picbox:nth-of-type(1),
+main > .row .slide7 .sc4 > .picbox:nth-of-type(1) {
+  width: 30%;
+}
+main > .row > .slide4 > .sc1 > .picbox:nth-of-type(1) > img,
+main > .row > .slide4 .sc2 > .picbox:nth-of-type(1) > img,
+main > .row > .slide4 .sc3 > .picbox:nth-of-type(1) > img,
+main > .row > .slide4 .sc4 > .picbox:nth-of-type(1) > img,
+main > .row .slide5 > .sc1 > .picbox:nth-of-type(1) > img,
+main > .row .slide5 .sc2 > .picbox:nth-of-type(1) > img,
+main > .row .slide5 .sc3 > .picbox:nth-of-type(1) > img,
+main > .row .slide5 .sc4 > .picbox:nth-of-type(1) > img,
+main > .row .slide6 > .sc1 > .picbox:nth-of-type(1) > img,
+main > .row .slide6 .sc2 > .picbox:nth-of-type(1) > img,
+main > .row .slide6 .sc3 > .picbox:nth-of-type(1) > img,
+main > .row .slide6 .sc4 > .picbox:nth-of-type(1) > img,
+main > .row .slide7 > .sc1 > .picbox:nth-of-type(1) > img,
+main > .row .slide7 .sc2 > .picbox:nth-of-type(1) > img,
+main > .row .slide7 .sc3 > .picbox:nth-of-type(1) > img,
+main > .row .slide7 .sc4 > .picbox:nth-of-type(1) > img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  transform: translateX(300px) rotate(-7deg);
+  transition: 1s;
+}
+main > .row > .slide4 > .sc1 > .picbox:nth-of-type(3),
+main > .row > .slide4 .sc2 > .picbox:nth-of-type(3),
+main > .row > .slide4 .sc3 > .picbox:nth-of-type(3),
+main > .row > .slide4 .sc4 > .picbox:nth-of-type(3),
+main > .row .slide5 > .sc1 > .picbox:nth-of-type(3),
+main > .row .slide5 .sc2 > .picbox:nth-of-type(3),
+main > .row .slide5 .sc3 > .picbox:nth-of-type(3),
+main > .row .slide5 .sc4 > .picbox:nth-of-type(3),
+main > .row .slide6 > .sc1 > .picbox:nth-of-type(3),
+main > .row .slide6 .sc2 > .picbox:nth-of-type(3),
+main > .row .slide6 .sc3 > .picbox:nth-of-type(3),
+main > .row .slide6 .sc4 > .picbox:nth-of-type(3),
+main > .row .slide7 > .sc1 > .picbox:nth-of-type(3),
+main > .row .slide7 .sc2 > .picbox:nth-of-type(3),
+main > .row .slide7 .sc3 > .picbox:nth-of-type(3),
+main > .row .slide7 .sc4 > .picbox:nth-of-type(3) {
+  width: 30%;
+}
+main > .row > .slide4 > .sc1 > .picbox:nth-of-type(3) > img,
+main > .row > .slide4 .sc2 > .picbox:nth-of-type(3) > img,
+main > .row > .slide4 .sc3 > .picbox:nth-of-type(3) > img,
+main > .row > .slide4 .sc4 > .picbox:nth-of-type(3) > img,
+main > .row .slide5 > .sc1 > .picbox:nth-of-type(3) > img,
+main > .row .slide5 .sc2 > .picbox:nth-of-type(3) > img,
+main > .row .slide5 .sc3 > .picbox:nth-of-type(3) > img,
+main > .row .slide5 .sc4 > .picbox:nth-of-type(3) > img,
+main > .row .slide6 > .sc1 > .picbox:nth-of-type(3) > img,
+main > .row .slide6 .sc2 > .picbox:nth-of-type(3) > img,
+main > .row .slide6 .sc3 > .picbox:nth-of-type(3) > img,
+main > .row .slide6 .sc4 > .picbox:nth-of-type(3) > img,
+main > .row .slide7 > .sc1 > .picbox:nth-of-type(3) > img,
+main > .row .slide7 .sc2 > .picbox:nth-of-type(3) > img,
+main > .row .slide7 .sc3 > .picbox:nth-of-type(3) > img,
+main > .row .slide7 .sc4 > .picbox:nth-of-type(3) > img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateX(-300px) rotate(7deg);
+  border-radius: 30px;
+  transition: 1s;
+}
+main > .row > .slide4 > .sc1 > .picbox1,
+main > .row > .slide4 .sc2 > .picbox1,
+main > .row > .slide4 .sc3 > .picbox1,
+main > .row > .slide4 .sc4 > .picbox1,
+main > .row .slide5 > .sc1 > .picbox1,
+main > .row .slide5 .sc2 > .picbox1,
+main > .row .slide5 .sc3 > .picbox1,
+main > .row .slide5 .sc4 > .picbox1,
+main > .row .slide6 > .sc1 > .picbox1,
+main > .row .slide6 .sc2 > .picbox1,
+main > .row .slide6 .sc3 > .picbox1,
+main > .row .slide6 .sc4 > .picbox1,
+main > .row .slide7 > .sc1 > .picbox1,
+main > .row .slide7 .sc2 > .picbox1,
+main > .row .slide7 .sc3 > .picbox1,
+main > .row .slide7 .sc4 > .picbox1 {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main > .row > .slide4 > .sc1 > .picbox1 > h2,
+main > .row > .slide4 .sc2 > .picbox1 > h2,
+main > .row > .slide4 .sc3 > .picbox1 > h2,
+main > .row > .slide4 .sc4 > .picbox1 > h2,
+main > .row .slide5 > .sc1 > .picbox1 > h2,
+main > .row .slide5 .sc2 > .picbox1 > h2,
+main > .row .slide5 .sc3 > .picbox1 > h2,
+main > .row .slide5 .sc4 > .picbox1 > h2,
+main > .row .slide6 > .sc1 > .picbox1 > h2,
+main > .row .slide6 .sc2 > .picbox1 > h2,
+main > .row .slide6 .sc3 > .picbox1 > h2,
+main > .row .slide6 .sc4 > .picbox1 > h2,
+main > .row .slide7 > .sc1 > .picbox1 > h2,
+main > .row .slide7 .sc2 > .picbox1 > h2,
+main > .row .slide7 .sc3 > .picbox1 > h2,
+main > .row .slide7 .sc4 > .picbox1 > h2 {
+  color: white;
+  font-family: "text2";
+  font-size: 80px;
+}
+main > .row > .slide4 > .sc1 > .picbox1 > span,
+main > .row > .slide4 .sc2 > .picbox1 > span,
+main > .row > .slide4 .sc3 > .picbox1 > span,
+main > .row > .slide4 .sc4 > .picbox1 > span,
+main > .row .slide5 > .sc1 > .picbox1 > span,
+main > .row .slide5 .sc2 > .picbox1 > span,
+main > .row .slide5 .sc3 > .picbox1 > span,
+main > .row .slide5 .sc4 > .picbox1 > span,
+main > .row .slide6 > .sc1 > .picbox1 > span,
+main > .row .slide6 .sc2 > .picbox1 > span,
+main > .row .slide6 .sc3 > .picbox1 > span,
+main > .row .slide6 .sc4 > .picbox1 > span,
+main > .row .slide7 > .sc1 > .picbox1 > span,
+main > .row .slide7 .sc2 > .picbox1 > span,
+main > .row .slide7 .sc3 > .picbox1 > span,
+main > .row .slide7 .sc4 > .picbox1 > span {
+  padding: 8px 30px;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 40px;
+}
+main > .row > .slide4 > .sc1 > .picbox1 > span > p,
+main > .row > .slide4 .sc2 > .picbox1 > span > p,
+main > .row > .slide4 .sc3 > .picbox1 > span > p,
+main > .row > .slide4 .sc4 > .picbox1 > span > p,
+main > .row .slide5 > .sc1 > .picbox1 > span > p,
+main > .row .slide5 .sc2 > .picbox1 > span > p,
+main > .row .slide5 .sc3 > .picbox1 > span > p,
+main > .row .slide5 .sc4 > .picbox1 > span > p,
+main > .row .slide6 > .sc1 > .picbox1 > span > p,
+main > .row .slide6 .sc2 > .picbox1 > span > p,
+main > .row .slide6 .sc3 > .picbox1 > span > p,
+main > .row .slide6 .sc4 > .picbox1 > span > p,
+main > .row .slide7 > .sc1 > .picbox1 > span > p,
+main > .row .slide7 .sc2 > .picbox1 > span > p,
+main > .row .slide7 .sc3 > .picbox1 > span > p,
+main > .row .slide7 .sc4 > .picbox1 > span > p {
+  color: white;
+  font-family: "text";
+  font-size: 50px;
+}
+main > .row > .slide8 {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide8 > .row {
+  justify-content: space-evenly;
+  align-items: center;
+}
+main > .row > .slide8 > .row > .mytxt {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main > .row > .slide8 > .row > .mytxt > h2 {
+  font-family: "title";
+  background: linear-gradient(#302a27, #e1a57d, #445f88, #afd3ec, #965f39, #445f88);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 85px;
+}
+main > .row > .slide8 > .row > .mytxt > p {
+  font-family: "text";
+  color: white;
+  line-height: 30px;
+  margin-top: 30px;
+}
+main > .row > .slide8 > .row > .mytxt > span {
+  padding: 8px 30px;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 40px;
+}
+main > .row > .slide8 > .row > .mytxt > span > p {
+  color: white;
+  font-family: "text";
+  font-size: 40px;
+}
+main > .row > .slide8 > .row > .mybox {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+main > .row > .slide8 > .row > .mybox > .textbox2 {
+  background-color: rgb(255, 150, 97) !important;
+  top: 150px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox3 {
+  background-color: rgb(255, 119, 52) !important;
+  top: 200px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox4 {
+  background-color: rgb(255, 89, 7) !important;
+  top: 300px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox5 {
+  background-color: rgb(199, 66, 0) !important;
+  top: 400px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox1 {
+  width: 70%;
+  background-color: rgb(255, 210, 187);
+  border-radius: 30px;
+  position: absolute;
+  transition: 4s;
+}
+main > .row > .slide8 > .row > .mybox > .textbox1 > div {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 180px;
+  margin-left: 20px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox1 > div:nth-of-type(1) {
+  font-family: "title1";
+  font-size: 25px;
+}
+main > .row > .slide8 > .row > .mybox > .textbox1 > div:nth-of-type(2) {
+  font-family: "title";
+  font-size: 32px;
+}
+main > .row > .slide9 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 180px;
+  z-index: 100;
+}
+main > .row > .slide9 > .row {
+  justify-content: space-evenly;
+  align-items: center;
+}
+main > .row > .slide9 > .row > div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+main > .row > .slide9 > .row > div:nth-of-type(1) > p {
+  font-family: "text";
+  font-size: 26px;
+  line-height: 35px;
+}
+main > .row > .slide9 > .row > div:nth-of-type(2) > h2 {
+  font-family: "title";
+  font-size: 58px;
+}
+main > .row > .slide10 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  height: 200vh;
+  position: relative;
+}
+main > .row > .slide10::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(53, 27, 10, 0.577);
+}
+main > .row > .slide10 > video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+}
+main > .row > .slide10 > .row {
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+main > .row > .slide10 > .row > * {
+  margin: 30px 0;
+}
+main > .row > .slide10 > .row > .figpic {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.304);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(100px) !important;
+          backdrop-filter: blur(100px) !important;
+  transition: 1s !important;
+}
+main > .row > .slide10 > .row > .figpic > * {
+  margin: 10px 0;
+}
+main > .row > .slide10 > .row > .figpic > figure {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main > .row > .slide10 > .row > .figpic > figure > img {
+  width: 85%;
+  height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  margin: 25px 0;
+  filter: grayscale(20);
+  transition: 1s;
+  cursor: pointer;
+}
+main > .row > .slide10 > .row > .figpic > figure > img:hover {
+  filter: grayscale(0);
+}
+main > .row > .slide10 > .row > .figpic > .mytext {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "text";
+}
+main > .row > .slide10 > .row > .figpic > .mytext > * {
+  margin: 10px 0;
+}
+main > .row > .slide10 > .row > .figpic > .boxtext {
+  width: 85%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+main > .row > .slide10 > .row > .figpic > .boxtext > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  border: 1px solid white;
+  border-radius: 18px;
+}
+main > .row > .slide10 > .row > .figpic > .boxtext > span > p {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+main > .row > .slide10 > .row > .figpic1 > * {
+  margin: 20px 0;
+}
+main > .row > .slide10 > .row > .figpic1 > .boxtext {
+  margin: 30px 0;
+}
+main > .row > .slide11 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+main > .row > .slide11 > .flobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide11 > .flobox:nth-of-type(1) {
+  width: 50%;
+  transform: translateY(120px);
+  z-index: 100;
+  transition: 0.4s;
+}
+main > .row > .slide11 > .flobox:nth-of-type(1) > img {
+  width: 550px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  display: flex;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) {
+  width: 90%;
+  position: relative;
+  border: 1px solid rgba(160, 160, 159, 0.284);
+  border-radius: 30px;
+  transition: 1s;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > video {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 1s;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid > * {
+  margin: 25px 0;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid > h2 {
+  font-family: "title";
+  width: 90%;
+  font-size: 60px;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid > p {
+  font-family: "text";
+  width: 65%;
+  line-height: 30px;
+  font-size: 23px;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid > span {
+  padding: 20px 30px;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main > .row > .slide11 > .flobox:nth-of-type(2) > .txtvid > span > p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+main > .row > .slide12 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  overflow: hidden;
+}
+main > .row > .slide12 > .row {
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+main > .row > .slide12 > .row > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide12 > .row > div:nth-of-type(1) {
+  width: 100%;
+  justify-content: start;
+}
+main > .row > .slide12 > .row > div:nth-of-type(1) > p {
+  color: white;
+  font-family: "text2";
+  line-height: 35px;
+  font-size: 23px;
+  width: 50%;
+}
+main > .row > .slide12 > .row > div:nth-of-type(2) {
+  width: 80%;
+  justify-content: start;
+  margin-top: 70px;
+  overflow: hidden;
+}
+main > .row > .slide12 > .row > div:nth-of-type(2) > h3 {
+  font-family: "text1";
+  background: linear-gradient(#302a27, #e1a57d, #445f88, #afd3ec, #965f39, #445f88);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 80px;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+main > .row > .slide12 > .row > div:nth-of-type(3) {
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+main > .row > .slide12 > .row > div:nth-of-type(3) > h2 {
+  font-family: "title";
+  background: linear-gradient(#302a27, #e1a57d, #445f88, #afd3ec, #965f39, #445f88);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 150px;
+  font-weight: bolder;
+}
+main > .row > .slide12 > .row > div:nth-of-type(4) {
+  width: 100%;
+  justify-content: end;
+  margin-top: 30px;
+  overflow: hidden;
+}
+main > .row > .slide12 > .row > div:nth-of-type(4) > h3 {
+  font-family: "text1";
+  background: linear-gradient(#302a27, #e1a57d, #445f88, #afd3ec, #965f39, #445f88);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 80px;
+  transform: translateX(100%);
+  transition: 1s;
+}
+main > .row > .slide12 > .row > div:nth-of-type(5) {
+  width: 100%;
+  justify-content: end;
+  margin-top: 70px;
+}
+main > .row > .slide12 > .row > div:nth-of-type(5) > p {
+  color: white;
+  font-family: "text2";
+  line-height: 35px;
+  font-size: 23px;
+  width: 50%;
+}
+main > .row > .slide13 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+main > .row > .slide13 > footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(181, 180, 180, 0.371);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: rgba(57, 57, 57, 0.32);
+  border-radius: 20px;
+}
+main > .row > .slide13 > footer > * {
+  margin: 30px 0;
+}
+main > .row > .slide13 > footer > ul {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide13 > footer > ul > h3 {
+  color: white;
+  font-family: "title1";
+  margin: 20px 0;
+  font-size: 25px;
+}
+main > .row > .slide13 > footer > ul > li {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 15px;
+  color: white;
+  font-family: "text";
+  font-size: 22px;
+  transition: 1s;
+  cursor: pointer;
+}
+main > .row > .slide13 > footer > ul > li:hover {
+  color: orange;
+}
+main > .row > .slide13 > footer > ul > li > i {
+  font-size: 35px;
+  color: white;
+}
+main > .row > .slide13 > footer > ul > li > a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+main > .row > .slide13 > footer > ul > li > a:hover {
+  color: orangered;
+}
+main > .row > .slide13 > footer > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) {
+  width: 30%;
+  justify-content: center;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) > h2 {
+  color: orange;
+  font-family: "title";
+  width: 100%;
+  font-size: 40px;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) > h3 > span {
+  color: orangered;
+  font-family: "text";
+  overflow: hidden;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) > h3 > span:nth-of-type(2) {
+  animation: anime2 1s alternate infinite;
+  font-size: 35px;
+  margin-left: 50px;
+}
+main > .row > .slide13 > footer > div:nth-of-type(1) > h3 > span:nth-of-type(1) {
+  animation: anime3 1s alternate infinite;
+  font-size: 35px;
+  width: 100%;
+}
+main > .row > .slide13 > footer > div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .row > .slide13 > footer > div:nth-of-type(2) > img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes anime1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes anime2 {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  47% {
+    transform: rotateX(-5deg);
+  }
+  53% {
+    transform: rotateX(-5deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+}
+@keyframes anime3 {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  47% {
+    transform: rotateX(5deg);
+  }
+  53% {
+    transform: rotateX(5deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
+}/*# sourceMappingURL=style.css.map */
